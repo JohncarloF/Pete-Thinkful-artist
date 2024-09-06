@@ -13,14 +13,6 @@ h1 {
   font-family: "Georgia", Times, serif;
   text-align: center;
 }
-h2 { font-family: "Trebuchet MS", Times, serif; 
-  text-align: center;
-}
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
-}
-
 article {
   padding: 50px 0;
 }
@@ -58,6 +50,9 @@ hr {
 .image-circle {
   border-radius: 50%;
   border: 4px solid  #003049; /* Added a colored border */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 header {
   text-align: center;
@@ -75,6 +70,129 @@ a:hover{
 a:visited{
   color: #F08080;/*Changed the color of the link when visited */
 }
+
+
+.group-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+}
+  
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.item h1 {
+  margin: 0;
+  display: inline-block;
+  line-height: 40px;
+  white-space: nowrapx;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav a {
-  padding: 10px; /*added padding to the left and right */
+  margin-left: 20px;
+
+}
+.flex-start{
+  align-content: flex-start;
+}
+
+.item-img {
+  margin: 0;
+  display: inline-block;
+  line-height: 40px;
+  white-space: nowrapx;
+}
+.group-img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: nowrap;
+}
+
+#Portfolio article div {
+  margin: 0 10px 0 0px; /* add 20px of horizontal margin */
+}
+
+#Portfolio h2 {
+  text-align: center;
+}
+#Portfolio article {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 600px; /* or any other value that works for you */
+}
+#About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.group-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-main {
+  width: 100%;
+  margin: 20px;
+}
+
+.item-main:first-child {
+  flex-basis: 10%;
+  margin-right: 10px;
+}
+
+.item-main:nth-child(2) {
+  flex-basis: 50%;
+  margin-left: 10px;
+}
+
+.item-main:last-child {
+  flex-basis: 100%;
+  margin-top: 0px;
+}
+
+.image-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-main h3 {
+  text-align: center;
+}
+
+.item-main p {
+  text-align: left;
+}
+
+.item-main ul {
+  padding: 0;
+  margin: 0;
+}
+
+.item-main li {
+  margin-bottom: 10px;
+}
+.item-main .content {
+  /* Increase the width of the content section */
+  margin: 0 auto;
+}
+.item-main .content ul {
+  padding-left: 50px;
 }
